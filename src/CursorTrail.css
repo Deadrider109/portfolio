@@ -1,0 +1,112 @@
+
+.cursor-trail {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  pointer-events: none;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cursor-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #c084fc;
+  box-shadow:
+    0 0 10px rgba(192, 132, 252, 0.9),
+    0 0 25px rgba(168, 85, 247, 0.6);
+  opacity: 0.9;
+  will-change: transform;
+}
+
+.cursor-dot-1 {
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 25px #c084fc;
+}
+
+.cursor-dot-2 {
+  width: 11px;
+  height: 11px;
+  opacity: 0.9;
+}
+
+.cursor-dot-3 {
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+}
+
+.cursor-dot-4 {
+  width: 17px;
+  height: 17px;
+  opacity: 0.75;
+}
+
+.cursor-dot-5 {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.cursor-dot-6 {
+  width: 12px;
+  height: 12px;
+  opacity: 0.65;
+}
+
+.cursor-dot-7 {
+  width: 11px;
+  height: 11px;
+  opacity: 0.6;
+}
+
+.cursor-dot-8 {
+  width: 9px;
+  height: 9px;
+  opacity: 0.55;
+}
+
+.cursor-dot-9 {
+  width: 8px;
+  height: 8px;
+  opacity: 0.5;
+}
+
+.cursor-dot-10 {
+  width: 7px;
+  height: 7px;
+  opacity: 0.45;
+}
+
+.cursor-dot-11 {
+  width: 6px;
+  height: 6px;
+  opacity: 0.4;
+}
+
+.cursor-dot-12 {
+  width: 5px;
+  height: 5px;
+  opacity: 0.35;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-trail {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-trail {
+    display: none;
+  }
+}
